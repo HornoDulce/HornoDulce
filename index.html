@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tienda de Dulces</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DulceHorno</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <nav>
-    <button id="btn-tienda">Tienda</button>
-    <button id="btn-quienes">Quiénes Somos</button>
-    <button id="btn-contacto">Contacto</button>
-  </nav>
-
-  <main>
-    <h1>Bienvenido a la Tienda de Dulces</h1>
-    <p>Disfruta de los mejores dulces artesanales desde la comodidad de tu hogar.</p>
-  </main>
-
-  <script src="script.js"></script>
+  <section class="fullpage" style="background-image: url('img/fondo-home.jpg');">
+    <div class="overlay">
+      <nav class="menu">
+        <a href="tienda.html" class="btn">Tienda</a>
+        <a href="otros.html" class="btn">Otros Productos</a>
+        <a href="quienes.html" class="btn">Quiénes Somos</a>
+      </nav>
+      <div class="slogan">
+        <h1>Bienvenidos a DulceHorno</h1>
+        <p>Los mejores dulces artesanales para tu paladar</p>
+      </div>
+      <div class="controls">
+        <button onclick="location.href='tienda.html'" class="btn">Entrar</button>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
+
 
