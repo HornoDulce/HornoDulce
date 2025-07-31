@@ -1,74 +1,61 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DulceHorno</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Página Principal</title>
   <style>
-    body {
+    /* Que la imagen de fondo cubra toda la pantalla */
+    body, html {
       margin: 0;
+      padding: 0;
+      height: 100%;
       font-family: Arial, sans-serif;
-      background: url('img/fondo-pan.jpg') no-repeat center center fixed;
+    }
+    .fondo {
+      background-image: url('fondo-home.jpg');
       background-size: cover;
-      color: #fffbe9;
-      text-align: center;
+      background-position: center;
+      height: 100vh; /* altura pantalla completa */
+      width: 100%;
       display: flex;
       flex-direction: column;
+      align-items: center;
       justify-content: center;
-      height: 100vh;
-    }
-
-    .logo-container {
-      margin-bottom: 30px;
-    }
-
-    .logo-container img {
-      width: 200px;
-      max-width: 80%;
-    }
-
-    .button {
-      background-color: #f4a825;
       color: white;
-      padding: 15px 25px;
-      margin: 10px;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    }
+    nav {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+    }
+    nav button {
+      background-color: rgba(0,0,0,0.5);
       border: none;
-      border-radius: 10px;
-      font-size: 1.2em;
+      color: white;
+      padding: 10px 15px;
+      margin-left: 10px;
+      font-size: 16px;
       cursor: pointer;
-      width: 250px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
     }
-
-    .button:hover {
-      background-color: #e19310;
-    }
-
-    .privacy {
-      margin-top: 10px;
-      font-size: 0.9em;
-      color: #f0e7d4;
-    }
-
-    .slogan {
-      margin-top: 40px;
-      font-weight: bold;
-      font-size: 1.8em;
-      color: #fffde6;
+    nav button:hover {
+      background-color: rgba(0,0,0,0.8);
     }
   </style>
 </head>
 <body>
-
-  <div class="logo-container">
-    <img src="img/logo.png" alt="DulceHorno Logo">
+  <div class="fondo">
+    <nav>
+      <button onclick="alert('Inicio clickeado')">Inicio</button>
+      <button onclick="alert('Productos clickeado')">Productos</button>
+      <button onclick="alert('Contacto clickeado')">Contacto</button>
+    </nav>
+    <h1>Bienvenido a la Tienda</h1>
+    <p>Explora nuestros productos y ofertas</p>
   </div>
-
-  <button class="button" onclick="location.href='tienda.html'">Entrar a la Tienda</button>
-  <button class="button" onclick="location.href='quienes.html'">Quiénes Somos</button>
-  <div class="privacy"><a href="privacidad.html" style="color: white; text-decoration: none;">Política de Privacidad</a></div>
-
-  <div class="slogan">ENDULZA TU VIDA<br>SOMOS TU MEJOR OPCIÓN</div>
-
 </body>
 </html>
 
