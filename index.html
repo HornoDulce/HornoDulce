@@ -8,19 +8,26 @@
   <script defer src="script.js"></script>
 </head>
 <body>
+  <header class="header">
+    <div class="logo">DulceHorno</div>
+    <button class="nav-toggle" aria-label="Abrir menú">
+      &#9776;
+    </button>
+    <nav class="menu">
+      <a href="tienda.html" class="btn">Tienda</a>
+      <a href="otros.html" class="btn">Otros Productos</a>
+      <a href="quienes.html" class="btn">Quiénes Somos</a>
+    </nav>
+  </header>
+
   <section class="fullpage" style="background-image: url('img/fondo-home.jpg');">
     <div class="overlay">
-      <nav class="menu">
-        <a href="tienda.html" class="btn">Tienda</a>
-        <a href="otros.html" class="btn">Otros Productos</a>
-        <a href="quienes.html" class="btn">Quiénes Somos</a>
-      </nav>
       <div class="slogan">
         <h1>Bienvenidos a DulceHorno</h1>
         <p>Los mejores dulces artesanales para tu paladar</p>
       </div>
       <div class="controls">
-        <button onclick="location.href='tienda.html'" class="btn">Entrar</button>
+        <button onclick="location.href='tienda.html'" class="btn primary">Entrar</button>
       </div>
     </div>
   </section>
