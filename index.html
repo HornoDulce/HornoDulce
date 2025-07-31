@@ -1,89 +1,74 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DulceHorno</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background: url("img/fondo.jpg") no-repeat center center fixed;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('img/fondo-pan.jpg') no-repeat center center fixed;
       background-size: cover;
-      color: #fff;
+      color: #fffbe9;
       text-align: center;
       display: flex;
       flex-direction: column;
-      min-height: 100vh;
       justify-content: center;
-      padding: 1rem;
+      height: 100vh;
     }
 
-    .logo {
-      background-color: rgba(255, 255, 255, 0.9);
-      border-radius: 2rem;
-      padding: 1rem;
-      max-width: 300px;
-      margin: 0 auto 2rem;
+    .logo-container {
+      margin-bottom: 30px;
     }
 
-    .logo img {
-      max-width: 100%;
+    .logo-container img {
+      width: 200px;
+      max-width: 80%;
     }
 
-    .btn {
+    .button {
       background-color: #f4a825;
       color: white;
-      padding: 1rem 2rem;
-      font-size: 1.2rem;
+      padding: 15px 25px;
+      margin: 10px;
       border: none;
-      border-radius: 0.5rem;
-      margin: 0.5rem 0;
+      border-radius: 10px;
+      font-size: 1.2em;
       cursor: pointer;
-      text-decoration: none;
-      display: inline-block;
-      width: 90%;
-      max-width: 400px;
+      width: 250px;
+    }
+
+    .button:hover {
+      background-color: #e19310;
     }
 
     .privacy {
-      margin-top: 1rem;
-      font-size: 1rem;
-      color: #eee;
+      margin-top: 10px;
+      font-size: 0.9em;
+      color: #f0e7d4;
     }
 
     .slogan {
-      margin-top: 3rem;
+      margin-top: 40px;
       font-weight: bold;
-      font-size: 2rem;
-      line-height: 1.3;
-      color: #f5f1e5;
-    }
-
-    @media screen and (max-width: 600px) {
-      .slogan {
-        font-size: 1.5rem;
-      }
+      font-size: 1.8em;
+      color: #fffde6;
     }
   </style>
 </head>
 <body>
-  <div class="logo">
+
+  <div class="logo-container">
     <img src="img/logo.png" alt="DulceHorno Logo">
   </div>
 
-  <a href="tienda.html" class="btn">Entrar a la Tienda</a>
-  <a href="quienes-somos.html" class="btn">Quiénes Somos</a>
-  <div class="privacy">Política de Privacidad</div>
+  <button class="button" onclick="location.href='tienda.html'">Entrar a la Tienda</button>
+  <button class="button" onclick="location.href='quienes.html'">Quiénes Somos</button>
+  <div class="privacy"><a href="privacidad.html" style="color: white; text-decoration: none;">Política de Privacidad</a></div>
 
-  <div class="slogan">
-    ENDULZA TU VIDA<br>
-    SOMOS TU MEJOR OPCIÓN
-  </div>
+  <div class="slogan">ENDULZA TU VIDA<br>SOMOS TU MEJOR OPCIÓN</div>
+
 </body>
 </html>
+
