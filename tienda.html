@@ -8,117 +8,42 @@
   <script defer src="script.js"></script>
 </head>
 <body>
+  <header class="header">
+    <div class="logo">DulceHorno</div>
+    <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+    <nav class="menu">
+      <a href="index.html" class="btn">Inicio</a>
+      <a href="otros.html" class="btn">Otros Productos</a>
+      <a href="quienes.html" class="btn">Quiénes Somos</a>
+    </nav>
+  </header>
+
   <section class="fullpage" style="background-image: url('img/fondo-tienda.jpg');">
     <div class="overlay store">
       <div class="products">
-         <!-- Producto: Polvorones -->
-    <div class="card">
-      <img src="img/polvorones.jpg" alt="Polvorones">
-      <h2>Polvorones</h2>
-      <p>Descripción breve de los polvorones...</p>
-      <p class="availability">Disponibilidad: <span class="status">Disponible</span></p>
+
+        <!-- Productos -->
+        <div class="card"><img src="img/polvorones.jpg" alt="Polvorones"><h2>Polvorones</h2><p>Descripción breve de los polvorones...</p><p class="availability">Disponibilidad: <span class="status">Disponible</span></p></div>
+        <div class="card"><img src="img/eclair.jpg" alt="Eclair"><h2>Eclair</h2><p>Descripción breve del eclair...</p><p class="availability">Disponibilidad: <span class="status">Disponible</span></p></div>
+        <div class="card"><img src="img/donas.jpg" alt="Donas"><h2>Donas</h2><p>Descripción breve de las donas...</p><p class="availability">Disponibilidad: <span class="status">Disponible</span></p></div>
+        <div class="card"><img src="img/pasteles.jpg" alt="Pasteles"><h2>Pasteles</h2><p>Descripción breve de los pasteles...</p><p class="availability">Disponibilidad: <span class="status">Disponible</span></p></div>
+        <div class="card"><img src="img/pastelitos.jpg" alt="Pastelitos"><h2>Pastelitos</h2><p>Descripción breve de los pastelitos...</p><p class="availability">Disponibilidad: <span class="status">Disponible</span></p></div>
+        <div class="card"><img src="img/ponquesitos.jpg" alt="Ponquesitos"><h2>Ponquesitos</h2><p>Descripción breve de los ponquesitos...</p><p class="availability">Disponibilidad: <span class="status">Disponible</span></p></div>
+        <div class="card"><img src="img/masa-real.jpg" alt="Masa Real"><h2>Masa Real</h2><p>Descripción breve de la masa real...</p><p class="availability">Disponibilidad: <span class="status">Disponible</span></p></div>
+        <div class="card"><img src="img/pan-gloria.jpg" alt="Pan de Gloria"><h2>Pan de Gloria</h2><p>Descripción breve del pan de gloria...</p><p class="availability">Disponibilidad: <span class="status">Disponible</span></p></div>
+        <div class="card"><img src="img/cruasan.jpg" alt="Cruasán"><h2>Cruasán</h2><p>Descripción breve del cruasán...</p><p class="availability">Disponibilidad: <span class="status">Disponible</span></p></div>
+        <div class="card"><img src="img/pan-corteza-dura.jpg" alt="Pan Corteza Dura"><h2>Pan Corteza Dura</h2><p>Descripción breve del pan de corteza dura...</p><p class="availability">Disponibilidad: <span class="status">Disponible</span></p></div>
+        <div class="card"><img src="img/pan-corteza-suave.jpg" alt="Pan Corteza Suave"><h2>Pan Corteza Suave</h2><p>Descripción breve del pan de corteza suave...</p><p class="availability">Disponibilidad: <span class="status">Disponible</span></p></div>
+        <div class="card"><img src="img/pan-perro.jpg" alt="Pan Perro"><h2>Pan Perro</h2><p>Descripción breve del pan para perros calientes...</p><p class="availability">Disponibilidad: <span class="status">Disponible</span></p></div>
+        <div class="card"><img src="img/pan-hamburguesa.jpg" alt="Pan Hamburguesa"><h2>Pan Hamburguesa</h2><p>Descripción breve del pan para hamburguesas...</p><p class="availability">Disponibilidad: <span class="status">Disponible</span></p></div>
+
+      </div>
+
+      <div class="controls">
+        <a href="tel:+5350896082" class="btn">Llamar para Comprar</a>
+        <a href="otros.html" class="btn">Otros Productos</a>
+      </div>
     </div>
-
-    <!-- Producto: Eclair -->
-    <div class="card">
-      <img src="img/eclair.jpg" alt="Eclair">
-      <h2>Eclair</h2>
-      <p>Descripción breve del eclair...</p>
-      <p class="availability">Disponibilidad: <span class="status">Disponible</span></p>
-    </div>
-
-    <!-- Producto: Donas -->
-    <div class="card">
-      <img src="img/donas.jpg" alt="Donas">
-      <h2>Donas</h2>
-      <p>Descripción breve de las donas...</p>
-      <p class="availability">Disponibilidad: <span class="status">Disponible</span></p>
-    </div>
-
-    <!-- Producto: Pasteles -->
-    <div class="card">
-      <img src="img/pasteles.jpg" alt="Pasteles">
-      <h2>Pasteles</h2>
-      <p>Descripción breve de los pasteles...</p>
-      <p class="availability">Disponibilidad: <span class="status">Disponible</span></p>
-    </div>
-
-    <!-- Producto: Pastelitos -->
-    <div class="card">
-      <img src="img/pastelitos.jpg" alt="Pastelitos">
-      <h2>Pastelitos</h2>
-      <p>Descripción breve de los pastelitos...</p>
-      <p class="availability">Disponibilidad: <span class="status">Disponible</span></p>
-    </div>
-
-    <!-- Producto: Ponquesitos -->
-    <div class="card">
-      <img src="img/ponquesitos.jpg" alt="Ponquesitos">
-      <h2>Ponquesitos</h2>
-      <p>Descripción breve de los ponquesitos...</p>
-      <p class="availability">Disponibilidad: <span class="status">Disponible</span></p>
-    </div>
-
-    <!-- Producto: Masa Real -->
-    <div class="card">
-      <img src="img/masa-real.jpg" alt="Masa Real">
-      <h2>Masa Real</h2>
-      <p>Descripción breve de la masa real...</p>
-      <p class="availability">Disponibilidad: <span class="status">Disponible</span></p>
-    </div>
-
-    <!-- Producto: Pan de Gloria -->
-    <div class="card">
-      <img src="img/pan-gloria.jpg" alt="Pan de Gloria">
-      <h2>Pan de Gloria</h2>
-      <p>Descripción breve del pan de gloria...</p>
-      <p class="availability">Disponibilidad: <span class="status">Disponible</span></p>
-    </div>
-
-    <!-- Producto: Cruasán -->
-    <div class="card">
-      <img src="img/cruasan.jpg" alt="Cruasán">
-      <h2>Cruasán</h2>
-      <p>Descripción breve del cruasán...</p>
-      <p class="availability">Disponibilidad: <span class="status">Disponible</span></p>
-    </div>
-
-    <!-- Producto: Pan Corteza Dura -->
-    <div class="card">
-      <img src="img/pan-corteza-dura.jpg" alt="Pan Corteza Dura">
-      <h2>Pan Corteza Dura</h2>
-      <p>Descripción breve del pan de corteza dura...</p>
-      <p class="availability">Disponibilidad: <span class="status">Disponible</span></p>
-    </div>
-
-    <!-- Producto: Pan Corteza Suave -->
-    <div class="card">
-      <img src="img/pan-corteza-suave.jpg" alt="Pan Corteza Suave">
-      <h2>Pan Corteza Suave</h2>
-      <p>Descripción breve del pan de corteza suave...</p>
-      <p class="availability">Disponibilidad: <span class="status">Disponible</span></p>
-    </div>
-
-    <!-- Producto: Pan Perro -->
-    <div class="card">
-      <img src="img/pan-perro.jpg" alt="Pan Perro">
-      <h2>Pan Perro</h2>
-      <p>Descripción breve del pan para perros calientes...</p>
-      <p class="availability">Disponibilidad: <span class="status">Disponible</span></p>
-    </div>
-
-    <!-- Producto: Pan Hamburguesa -->
-    <div class="card">
-      <img src="img/pan-hamburguesa.jpg" alt="Pan Hamburguesa">
-      <h2>Pan Hamburguesa</h2>
-      <p>Descripción breve del pan para hamburguesas...</p>
-      <p class="availability">Disponibilidad: <span class="status">Disponible</span></p>
-    </div>
-
-  </div>
-
-  <div class="controls">
-    <a href="https://wa.me/1234567890?text=Hola%2C%20quiero%20comprar%20productos%20de%20DulceHorno" class="btn">Comprar</a>
-    <a href="otros.html" class="btn">Otros Productos</a>
-  </div>
-
+  </section>
+</body>
+</html>
